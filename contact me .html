@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png">
+
+</head>
+<body>
+  <header class="header">
+    <!-- NAVIGATION BAR -->
+<h2>Vankar Chaitanya</h2>
+</header>
+   <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="homepage.html">Home</a>
+      <a class="nav-item nav-link" href="about.html">About Me</a>
+      <a class="nav-item nav-link active" href="contact%20me%20.html">Contact<span class="sr-only">(current)</span></a>
+    </div> 
+  </div>
+</nav>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td><input type="text" name=c.namerequired></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td><input type="text"name=c.namerequired></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td>
+                <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Sumbit</td>
+                <td><input type="submit" name="submit" value="Send your message" class="button transition"></td>
+            </tr>
+        </table>
+    </form>
+<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://docs.google.com/spreadsheets/d/1AuvfwUb8Ptgu6nAiP1rvNDbz45TBA3tgduedBxz0Tec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+<footer>
+    <div class="social-icons-container">
+			<ul class="socialicons">
+				<li><a href=""><i class="fa fa-YouTube" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.twitter.com/swaroopofficiel"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="ttps://github.com/swaroopofficiel"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><a href="https://in.linkedin.com/in/swaroopofficiel"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+			</div>
+			<div class="copyright">Copyright &copy; 2020 VankarChaitanya</div>
+</footer>
+
+</body>
+</html>

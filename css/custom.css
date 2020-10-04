@@ -1,0 +1,82 @@
+.bg-light {
+    background-color: black;
+}
+
+
+#navbarSupportedContent {
+    flex-flow: row-reverse;
+}
+
+
+.header {
+    text-align: center;
+}
+
+
+#top {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#title-block {
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+.article {
+    text-align: center;
+}
+
+
+.nav-item  {
+    text-align: center;
+    
+    
+}
+
+
+.jumbotron {
+    background-color: crimson;
+    color: white;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+
+.card {
+    margin-bottom: 25px;
+    width: 18rem;
+}
+
+
+.container {
+    max-width: 100%;
+}
+
+
+#projects {
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.h6{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.social-icons-container{
+    text-align: center;
+    
+}
+.copyright{
+    text-align: center;
+}
+.li{
+    text-decoration: none;
+    font-style: italic;
+}
